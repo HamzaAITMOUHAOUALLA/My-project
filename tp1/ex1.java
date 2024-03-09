@@ -1,18 +1,30 @@
 package tp1;
 import java.util.Scanner;
+
 public class ex1 {
     public static void main(String[] args) {
-        Scanner Sc = new Scanner(System.in);
-        int a,b,s,p;
-        String nam;
-        System.out.println("enrer votre nam ");
-        nam = Sc.nextLine();
-        System.out.println("entre deux entiers");
-         a= Sc.nextInt();
-         b= Sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
 
-         s=a+b;
-         p=a*b;
-        System.out.println(nam+"la somme est "+s+" le preduit est \n"+p);
+        System.out.print("Entrez le premier entier : ");
+        int entier1 = scanner.nextInt();
+
+        System.out.print("Entrez le deuxième entier : ");
+        int entier2 = scanner.nextInt();
+
+        scanner.close();
+
+        // Calculs
+        int somme = entier1 + entier2;
+        int difference = entier1 - entier2;
+        int produit = entier1 * entier2;
+        double quotient = (double) entier1 / entier2;
+
+        // Affichage des résultats
+        System.out.println("La somme est : " + somme);
+        System.out.println("La différence est : " + difference);
+        System.out.println("Le produit est : " + produit);
+        System.out.println("Le quotient est : " + quotient);
     }
 }
+
+
