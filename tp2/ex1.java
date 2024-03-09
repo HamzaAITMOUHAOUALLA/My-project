@@ -14,10 +14,10 @@ public class ex1 {
           s+=nb;
           p*=nb;
         }
-      m= s / n;
+      m=   s / n;
 
 
 
-        System.out.println("la somme est"+s+"le produit est "+p+"la moyenne est "+m);
+        System.out.println("la somme est   "+s+"le produit est "+p+"la moyenne est "+m);
     }
 }
